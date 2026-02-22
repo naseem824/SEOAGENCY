@@ -1,3 +1,25 @@
+# ==========================================
+# 🤖 ROBOTS.TXT FOR SEOBLOGY.COM
+# Global HQ: Sialkot | Hub: Dubai
+# Last Updated: 2026-02-22
+# ==========================================
+
 User-agent: *
 Allow: /
+Allow: /dubai-seo/
+Allow: /services/
+Allow: /categories/
+Allow: /blog/
+
+# Disallow system and empty folders
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /cgi-bin/
+
+# Block unwanted AI scrapers (Optional - keeps your content for your users only)
+User-agent: GPTBot
+Disallow: /
+
+# Reference your Master Sitemap
 Sitemap: https://seoblogy.com/sitemap.xml
