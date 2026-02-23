@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url>
+  <url>
     <loc>https://seoblogy.com/index.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -55,7 +55,7 @@
   <url><loc>https://seoblogy.com/dubai-seo/pest-control-google-ads-management.html</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
   <url><loc>https://seoblogy.com/dubai-seo/plumbing-company-seo-services.html</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
   <url><loc>https://seoblogy.com/dubai-seo/electrical-contractor-seo.html</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
-   <url>
+  <url>
     <loc>https://seoblogy.com/blog/index.html</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,6 +63,4 @@
   </url>
   <url><loc>https://seoblogy.com/pages/contact.html</loc><lastmod>2026-02-22</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://seoblogy.com/pages/about.html</loc><lastmod>2026-02-22</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  </urlset>
-
-
+</urlset>
