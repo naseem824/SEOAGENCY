@@ -1,6 +1,216 @@
-# Netlify Redirects
+# ===============================================
+# NETLIFY REDIRECTS - SEO BLOGY
+# ===============================================
+
+# --- 1. SPA ROUTING (Keep your existing pattern, but with 200) ---
 /* /index.html    200
+
+# --- 2. API/SPECIAL ROUTES (Preserve these) ---
 /pages/* /pages/:splat    200
 /services/* /services/:splat    200
 /categories/* /categories/:splat    200
 /blog/* /blog/:splat    200
+
+# ===============================================
+# 301 PERMANENT REDIRECTS (Old WordPress URLs)
+# Place these BEFORE the SPA rules
+# ===============================================
+
+# --- 2.1 HOMEPAGE & CORE PAGES ---
+/contact/  /pages/contact  301
+/about/    /pages/about    301
+/chat-on-whats-app/  https://wa.me/+923249615069  301
+/portfolio/  /  301
+/seo-services-faq-seoblogy-expert-seo-in-sialkot-pakistan/  /pages/about  301
+
+# --- 2.2 LONDON SPECIFIC ---
+/google-ads-management-in-london/  /london-seo/ppc-management-london  301
+
+# --- 2.3 GOOGLE ADS / PPC (Pakistan Cities - Redirect to Main PPC Service) ---
+/google-ads-expert-in-karachi/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-lahore/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-faisalabad/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-gujranwala/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-gujrat/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-sialkot/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-islamabad/      /services/google-ads-campaign-management  301
+/google-ads-expert-in-peshawar/       /services/google-ads-campaign-management  301
+/google-ads-expert-in-multan/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-sargodha/       /services/google-ads-campaign-management  301
+/google-ads-expert-in-bahawalpur/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-sukkur/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-sheikhupura/    /services/google-ads-campaign-management  301
+/google-ads-expert-in-mardan/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-gwadar/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-abbottabad/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-muzaffarabad/   /services/google-ads-campaign-management  301
+/google-ads-expert-in-murree/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-kohat/          /services/google-ads-campaign-management  301
+/google-ads-expert-in-wah-cantt/      /services/google-ads-campaign-management  301
+/google-ads-expert-in-chiniot/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-larkana/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-jhelum/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-okara/          /services/google-ads-campaign-management  301
+/google-ads-expert-in-sahiwal/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-mirpur/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-rahim-yar-khan/ /services/google-ads-campaign-management  301
+
+# --- 2.4 KARACHI SUB-AREAS (All to Main PPC) ---
+/google-ads-expert-in-gulistan-e-johar/    /services/google-ads-campaign-management  301
+/google-ads-expert-in-north-nazimabad/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-clifton/             /services/google-ads-campaign-management  301
+/google-ads-expert-in-lyari/               /services/google-ads-campaign-management  301
+/google-ads-expert-in-site-area/           /services/google-ads-campaign-management  301
+/google-ads-expert-in-gulshan-e-iqbal/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-keamari/             /services/google-ads-campaign-management  301
+/google-ads-expert-in-korangi/             /services/google-ads-campaign-management  301
+/google-ads-expert-in-malir/               /services/google-ads-campaign-management  301
+/google-ads-expert-in-karachi-south/       /services/google-ads-campaign-management  301
+/google-ads-expert-in-karachi-central/     /services/google-ads-campaign-management  301
+/google-ads-expert-in-karachi-west/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-karachi-east/        /services/google-ads-campaign-management  301
+/google-ads-expert-in-saddar/              /services/google-ads-campaign-management  301
+
+# --- 2.5 LAHORE/SIALKOT SUB-AREAS (All to Main PPC) ---
+/google-ads-expert-in-sambrial/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-pasrur/           /services/google-ads-campaign-management  301
+/google-ads-expert-in-daska/            /services/google-ads-campaign-management  301
+/google-ads-expert-in-iqbal-town/       /services/google-ads-campaign-management  301
+/google-ads-expert-in-nishtar/          /services/google-ads-campaign-management  301
+/google-ads-expert-in-ravi/             /services/google-ads-campaign-management  301
+/google-ads-expert-in-wagah/            /services/google-ads-campaign-management  301
+/google-ads-expert-in-shalimar/         /services/google-ads-campaign-management  301
+/google-ads-expert-in-raiwind/          /services/google-ads-campaign-management  301
+/google-ads-expert-in-model-town/       /services/google-ads-campaign-management  301
+/google-ads-expert-in-lahore-cantonment/ /services/google-ads-campaign-management  301
+/google-ads-expert-in-lahore-city/      /services/google-ads-campaign-management  301
+
+# --- 2.6 SEO SERVICES (Pakistan Cities) ---
+/pakistan/seo-services/                                   /services/enterprise-search-engine-optimization  301
+/seo-services-in-pakistan/                                /services/enterprise-search-engine-optimization  301
+/pakistan/lahore-seo-agency-seo-expert/                   /services/local-seo-google-maps-domination  301
+/pakistan/sialkot-seo-services-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/karachi-seo-services-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/islamabad-seo-services-seo-expert/              /services/local-seo-google-maps-domination  301
+/pakistan/seo-services-rawalpindi-seo-expert/             /services/local-seo-google-maps-domination  301
+/pakistan/peshawar-seo-services-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/seo-services-multan-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/gujranwala-seo-agency-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/gujrat-seo-agency-seo-expert/                   /services/local-seo-google-maps-domination  301
+/pakistan/faisalabad-seo-solutions-seo-expert/            /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-daska-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/kamoke-seo-agency-seo-expert/                   /services/local-seo-google-maps-domination  301
+/pakistan/sargodha-seo-services-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/hyderabad-seo-services-seo-expert/              /services/local-seo-google-maps-domination  301
+/pakistan/kasur-seo-services-seo-expert/                  /services/local-seo-google-maps-domination  301
+/pakistan/khushab-seo-agency-seo-expert/                  /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-bhakkar-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/seo-agency-mianwali-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/chiniot-seo-services-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/seo-company-layyah-seo-consultant/              /services/local-seo-google-maps-domination  301
+/pakistan/nankana-sahib-seo-agency-seo-expert/            /services/local-seo-google-maps-domination  301
+/pakistan/seo-services-hafizabad-seo-expert/              /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-attock-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/narowal-seo-solutions-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-vehari-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/sheikhupura-seo-solutions-seo-expert/           /services/local-seo-google-maps-domination  301
+/pakistan/seo-services-bahawalnagar-seo-guru/             /services/local-seo-google-maps-domination  301
+/pakistan/okara-seo-solutions-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/seo-agency-jhang-seo-expert/                    /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-khanewal-seo-expert/              /services/local-seo-google-maps-domination  301
+/pakistan/jhelum-seo-services-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/seo-agency-dera-ghazi-khan-seo-expert/          /services/local-seo-google-maps-domination  301
+/pakistan/sahiwal-seo-services-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/seo-agency-rajanpur-seo-expert/                 /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-rahim-yar-khan-seo-consulatnt/    /services/local-seo-google-maps-domination  301
+/pakistan/pakpattan-seo-agency-seo-expert/                /services/local-seo-google-maps-domination  301
+/pakistan/seo-company-muzaffargarh-seo-consultant/        /services/local-seo-google-maps-domination  301
+/pakistan/mandi-bahauddin-seo-solutions-seo-expert/       /services/local-seo-google-maps-domination  301
+/pakistan/seo-solutions-lodhran-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/chakwal-seo-agency-seo-expert/                  /services/local-seo-google-maps-domination  301
+/pakistan/seo-agency-bahawalpur-seo-expert/               /services/local-seo-google-maps-domination  301
+/pakistan/toba-tek-singh-seo-solutions-seo-expert/       /services/local-seo-google-maps-domination  301
+
+# --- 2.7 INTERNATIONAL SERVICES ---
+/expert-seo-services-in-qatar-by-engr-naseem-aslam/  /services/enterprise-search-engine-optimization  301
+
+# --- 2.8 CATEGORIES & SERVICES ---
+/pakistan/digital-marketing-services/           /services/digital-marketing-strategy-consulting  301
+/pakistan/ppc-services/                         /categories/pay-per-click-advertising  301
+/pakistan/ppc-services/google-ads/              /services/google-ads-campaign-management  301
+/pakistan/ppc-services/facebook-ads/            /services/ppc-automation-scripts-tools  301
+/pakistan/ppc-services/instagram-ads/           /services/ppc-automation-scripts-tools  301
+/pakistan/ppc-services/social-media-ads/        /categories/pay-per-click-advertising  301
+/pakistan/ppc-services/bing-ads/                 /categories/pay-per-click-advertising  301
+
+# --- 2.9 WEB DESIGN SERVICES ---
+/pakistan/web-design-services/                               /categories/web-development  301
+/pakistan/web-design-services/website-design-and-development/ /categories/web-development  301
+/pakistan/web-design-services/website-redesign/              /categories/web-development  301
+/pakistan/web-design-services/responsive-website-design/     /services/high-speed-web-development-solutions  301
+/pakistan/web-design-services/e-commerce-website-design/     /services/e-commerce-conversion-rate-optimization  301
+
+# --- 2.10 SEO TOOLS & AUDITS ---
+/pakistan/seo-audit/                                   /services/technical-seo-audit-london  301
+/serp-analyser/                                         /services/data-driven-serp-competitor-analysis  301
+/pakistan/seo-services/keyword-research-analysis/       /categories/search-engine-optimization  301
+/pakistan/seo-services/technical-seo/                   /services/enterprise-search-engine-optimization  301
+/pakistan/seo-services/off-page-optimization/           /services/link-building-services-london  301
+/pakistan/seo-services/on-page-optimization/            /categories/search-engine-optimization  301
+/pakistan/seo-services/mobile-seo/                      /services/high-speed-web-development-solutions  301
+/pakistan/seo-services/link-building/                   /services/link-building-services-london  301
+/pakistan/seo-services/local-seo/                       /services/local-seo-google-maps-domination  301
+/pakistan/seo-services/video-seo/                       /services/youtube-shorts-reel-automation  301
+
+# --- 2.11 BLOG POSTS & GUIDES ---
+
+# Ecommerce Guides
+/pakistan/karachi/ecommerce-seo-guide-karachi/           /services/e-commerce-conversion-rate-optimization  301
+/pakistan/lahore/ecommerce-seo-strategies-lahore/        /services/e-commerce-conversion-rate-optimization  301
+
+# B2B & Export Guides
+/pakistan/faisalabad/seo-for-textile-exporters-guide/    /services/b2b-export-lead-generation  301
+/pakistan/faisalabad/manufacturing-seo-guide/            /services/b2b-export-lead-generation  301
+/pakistan/faisalabad/manufacturer-seo-case-study/        /services/b2b-export-lead-generation  301
+/pakistan/faisalabad/wholesale-seo-strategies/           /services/b2b-export-lead-generation  301
+/pakistan/gujranwala/ceramic-sanitary-ware-seo-guide/    /services/b2b-export-lead-generation  301
+/pakistan/gujranwala/electric-fan-seo-blueprint/         /services/b2b-export-lead-generation  301
+/pakistan/gujranwala/stainless-steel-seo-guide/          /services/b2b-export-lead-generation  301
+/pakistan/gujrat/furniture-seo-guide/                    /services/b2b-export-lead-generation  301
+/pakistan/gujrat/industrial-seo-blueprint/               /services/b2b-export-lead-generation  301
+/pakistan/gujrat/pottery-seo-guide/                      /services/b2b-export-lead-generation  301
+/pakistan/sialkot/export-seo-blueprint/                  /services/b2b-export-lead-generation  301
+/pakistan/sialkot/international-seo-guide-for-exporters/ /services/b2b-export-lead-generation  301
+
+# Medical/Legal/Local Guides
+/pakistan/gujranwala/doctors-clinic-seo-guide/           /services/local-seo-google-maps-domination  301
+/pakistan/gujrat/medical-seo-guide/                      /services/local-seo-google-maps-domination  301
+/pakistan/lahore/seo-for-doctors-lahore-a-guide-to-attracting-more-patients/ /services/local-seo-google-maps-domination  301
+/pakistan/lahore/local-seo-lahore-restaurants/           /services/local-seo-google-maps-domination  301
+/pakistan/lahore/seo-for-law-firms-lahore-a-b2b-consultant-seo-checklist/ /services/local-seo-google-maps-domination  301
+/pakistan/sialkot/healthcare-seo-strategy/               /services/local-seo-google-maps-domination  301
+/pakistan/sialkot/restaurant-seo-guide/                  /services/local-seo-google-maps-domination  301
+
+# Technical & Strategy Guides
+/pakistan/faisalabad/content-seo-strategy-faisalabad-business/    /categories/content-management-automation  301
+/pakistan/faisalabad/digital-partner-vs-seo-agency/               /categories/digital-marketing-strategy  301
+/pakistan/faisalabad/google-maps-guide/                           /services/local-seo-google-maps-domination  301
+/pakistan/faisalabad/technical-seo-mistakes-guide/                /services/technical-seo-audit-london  301
+/pakistan/lahore/building-digital-sifarish-local-link-building/   /services/link-building-services-london  301
+/pakistan/lahore/dha-lahore-seo-case-study/                       /services/local-seo-google-maps-domination  301
+/pakistan/lahore/keyword-research-for-lahore-market/              /categories/search-engine-optimization  301
+/pakistan/lahore/voice-search-optimization-lahore-businesses/     /categories/search-engine-optimization  301
+/pakistan/lahore/why-business-not-showing-google-maps/            /services/local-seo-google-maps-domination  301
+/pakistan/seo-services/technical-seo/wordpress-hack-recovery-case-study/ /services/enterprise-search-engine-optimization  301
+/pakistan/email-marketing-platforms/                               /services/digital-marketing-strategy-consulting  301
+
+# ===============================================
+# SAFETY NET CATCH-ALL RULES (Place at the VERY END)
+# ===============================================
+/pakistan/*  /services/  301
+/blog/*      /blog/  301
+
+# ===============================================
+# SPA FALLBACK (Keep this LAST)
+# ===============================================
+/* /index.html    200
