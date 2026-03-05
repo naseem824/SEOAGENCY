@@ -1,11 +1,12 @@
 // Global Multi-Hub Navigation for SEOBlogy
 const locationData = [
-    // --- HQ ---
+    // --- HQ & National ---
     { name: "🏢 Sialkot (Global HQ)", url: "/" },
+    { name: "🇵🇰 Pakistan Hub (National)", url: "/pakistan-seo/" },
 
     // --- Middle East ---
     { name: "🇦🇪 Dubai Hub (Middle East)", url: "/dubai-seo/" },
-    { name: "🇸🇦 Riyadh Hub (KSA Growth)", url: "/gulf-marketing/" },
+    { name: "🇸🇦 Riyadh Hub (KSA Growth)", url: "/riyadh-seo/" },
     { name: "🇶🇦 Qatar Hub (Premium Gulf)", url: "/qatar-seo/" },
 
     // --- UK & Europe ---
