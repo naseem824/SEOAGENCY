@@ -191,10 +191,16 @@
 # 2. SAFETY NETS (Catch-all Redirects)
 # -----------------------------------------------
 /pakistan/* /services/  301
-/blog/* /blog/      301
+/blog/* /blog/ 301
 
 # -----------------------------------------------
-# 3. SPA FALLBACK (Always LAST)
-# This handles everything that wasn't matched above
+# 3. ALLOW SITEMAPS (Prevent SPA from hijacking XML)
 # -----------------------------------------------
-/* /index.html  200
+/sitemap.xml /sitemap.xml 200
+/sitemaps/* /sitemaps/:splat 200
+
+# -----------------------------------------------
+# 4. SPA FALLBACK (Always LAST)
+# -----------------------------------------------
+/* /index.html 200
+
