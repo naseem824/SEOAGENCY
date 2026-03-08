@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://seoblogy.com/london-seo</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seoblogy.com/london-seo/london-seo-agency</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoblogy.com/london-seo/digital-marketing-london</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <!-- Continue with ALL your London URLs with priority 0.6 -->
+  <!-- I'll list a few more as examples -->
+  <url>
+    <loc>https://seoblogy.com/london-seo/ppc-management-london</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoblogy.com/london-seo/web-design-london</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seoblogy.com/london-seo/local-seo-london</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <!-- Add ALL 30 London URLs here with same pattern -->
+</urlset>
